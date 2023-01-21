@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+
+          .card {
+            @apply flex items-center justify-center flex-col gap-2 p-5 w-full sm:w-72 h-full bg-gray-100 border rounded-2xl
+          }
+
+        }
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .loading-page{
+    background: #000;
+    width:100%;
+    height:720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.5s ease;
+}
+
+.name{
+    font-size:90px;
+    font-weight:600;
+    display: flex;
+    flex-direction: row;
+    background-image: -webkit-linear-gradient(left,aqua,green);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text; 
+}
+
+.decoration{
+    width:110px;
+    height:8px;
+    border-radius:4px;
+    background-color:white;
+    animation: color 2s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+.decoration div{
+    height:100%;
+    /* width:25px; */
+    background-color:#f10707;
+    position: absolute;
+    animation: tex 3s ease-in-out infinite;
+    transition:0.5s;
+}
+@keyframes tex{
+    0%{
+        
+        width:0px;
+    }
+    25%{
+    
+        width:110px;
+    }
+    50%{
+        width:55px;
+    }
+    100%{
+        width:0px;
+    }
+}
+    </style>
+    <!--Tailwind CSS-->
+
+    <!--Font-Awesome-->
+    
+   
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("images/background.jpg");
+        
+          /* Set a specific height */
+          min-height: 500px; 
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="loading-page">
+        <div class="name">  <p>E</p><p>C</p><p>E</p><p>S</p><p>S</p>   </div>
+        <div class="decoration"><div></div></div>
+    </div>
+<div class="parallax">
+    <div class="container mx-auto py-8">
+
+        <div class="flex flex-col text-center gap-4 mb-8 p-4">
+
+            <div class="text-purple-800 text-4xl font-bold">Our team</div>
+
+        </div>
+
+        <div class="flex items-center justify-center flex-wrap gap-4 p-4">
+
+            <div class="card">
+
+                <img src="images/MY_IMAGE - Sriman Chakri.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">SRIMAN CHAKRI</div>
+                <div class="text-purple-600">General Secretary</div>              
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/Rajdeep Mondal - Rajdeep Mondal.jpeg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">RAJDEEP MONDAL</div>
+
+                <div class="text-purple-600">General Secretary</div>
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+        </div>
+ <div class="flex items-center justify-center flex-wrap gap-4 mb-8 p-4">
+
+    <div class="card">
+
+                <img src="images/Self-img - Yash Maroo.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">YASH MAROO</div>
+
+                <div class="text-purple-600">WebD Head</div>
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/IMG_20200208_150029 - Leela Prasad.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">D.LEELA PRASAD</div>
+
+                <div class="text-purple-600">Alumni Head</div>
+                
+                
+                
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/IMG_20190908_021827_282 - Ayush Maurya.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">AYUSH MAURYA</div>
+
+                <div class="text-purple-600">Treasurer</div>
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/6b055a3f-5bf2-44c3-833d-e1487223b011 - Abhishek Paul(1).jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">ABHISHEK PAUL</div>
+
+                <div class="text-purple-600">Operations Head</div>
+                
+                
+                
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/IMG_20201206_231804 - Ayush Sharma.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+                <div class="text-gray-900 text-lg font-bold">AYUSH SHARMA</div>
+
+                <div class="text-purple-600">Operations Head</div>
+                
+                               
+                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+</div>
+<script>
+    window.addEventListener("load",function(){
+      const preloader = document.querySelector('.loading-page');
+      preloader.classList.add('preload-finish');
+    });
+  
+  </script>
+  
+
+</body>
+
+</html>
